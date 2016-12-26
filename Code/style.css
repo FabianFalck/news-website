@@ -1,0 +1,40 @@
+
+#header-logo-bar h1{
+	display: inline;
+	padding-left:200px;
+	padding-right:50px;
+}
+
+#header-logo-bar h2{
+	padding-left:150px;
+	font-size:15px;
+}
+
+#header-logo-bar h1{
+	font-size=40px;
+}
+
+#categories{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#categories li {
+    float: left;
+}
+
+#categories a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+#main{
+	display:block;
+}
+
+#document-info li{
+	list-style-type: none;
+}
+
