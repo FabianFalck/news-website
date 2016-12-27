@@ -2,55 +2,97 @@
 WHAT TO DO NEXT:
 - see TODO
 - "responsive layout" in the sense that whatever is formatted with pxls in between is formatted with % of the width etc.-> see other file
-- search bar next to Logo
 - Footer Header 
  -->
 
 
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 	<title>Test document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div id = "header-logo-bar">
-		<img src="banana.jpg" width="50px">
-		<img src="banana.jpg" width="50px">
-		<img src="banana.jpg" width="50px">
+	<div id="page-wrap">
+		<div id = "header-logo-bar">
+			<img src="banana.jpg" alt="banana" width="50px">
+			<img src="banana.jpg" alt="banana" width="50px">
+			<img src="banana.jpg" alt="banana" width="50px">
 
-		<h1>Factnews</h1>
-		<h2>Facts, facts and original sources. Nothing but the truth, bro.</h2>
+			<h1>Factnews</h1>
+			<input type="text" id="search" name="search" placeholder="Search..">
+			<p style="padding-left:20px">Facts, facts and original sources. Nothing but the truth, bro.</p>
 
-	</div>
-	<div id="header-categories-bar">
-		<ul id="categories">
-				<!-- is such a navigation bar at the top suitable for our website at all? also include tags!-->
-				<li><a href="">Home</a></li>
-		  		<li><a href="">Politics</a></li>
-		  		<li><a href="">Economy</a></li>
-		  		<li><a href="">Tech</a></li>
-		  		<li><a href="">Regions</a></li>
-		  		<li><a href="">Sth more</a></li>
-		  		<li><a href="">Sth more</a></li>
-		  		<li><a href="">Sth more</a></li>
-		  		<li><a href="">Sth more</a></li>
-	</ul>
-	</div>
+		</div>
+		<div id="header-categories-bar">
+			<ul id="categories">
+					<!-- is such a navigation bar at the top suitable for our website at all? also include tags!-->
+					<li><a class="selected" href="">Home</a></li>
+			  		<li><a href="">Politics</a></li>
+			  		<li><a href="">Economy</a></li>
+			  		<li><a href="">Tech</a></li>
+			  		<li><a href="">Regions</a></li>
+			  		<li><a href="">Sth more</a></li>
+			  		<li><a href="">Sth more</a></li>
+			  		<li><a href="">Sth more</a></li>
+			  		<li><a href="">Sth more</a></li>
+			</ul>
+		</div>
 
-	<div id="main">
-		<!-- information about source etc. of a document-->
-		<ul id="document-info">
-			<!-- TODO allign the text after the dots all on one line-->
-			<li>Date:</li>
-			<li>Source:</li> <!-- original link-->
-			<li>Archived Source:</li> <!--archived link (with http://archive.org/web/)-->
-			<li>Comments:</li> <!--# of pages, # of figures-->
-			<li>Tags:</li> 
-			<!-- Potential further: Changelog/History, -->
+		<div id="main">
+			<!-- information about source etc. of a document-->
+			<h2>Document Info:</h2>
+			<table id="document-info-table">
+				<tr>
+					<td>Upload date:</td>
+					<td>08/20/1991</td>
+				</tr>
+				<tr>
+					<td>Source:</td> <!-- original link-->
+					<td><a href="http://www.tagesschau.de">http://www.tagesschau.de</a></td>
+				</tr>
+				<tr>
+					<td>Archived Source:</td> <!--archived link (with http://archive.org/web/)-->
+					<td><a href="http://web.archive.org/web/20161226012323/http://www.tagesschau.de/">http://web.archive.org/web/20161226012323/http://www.tagesschau.de/</a></td>
+				</tr>
+				<tr>
+					<td>Description:</td>
+					<td>Hellou, it's me!</td>
+				</tr>
+				<tr>
+					<td>Comments:</td> <!--# of pages, # of figures-->
+					<td>2 pages, 394 figures</td>
+				</tr>
+				<tr>
+					<td>Tags:</td> 
+					<td>Africa, Sudan, War</td> <!--have to be automatically/dynamically inserted-->
+				</tr>
+				<!-- Potentially further entires: , -->
+			</table>
 
+			<p>Some random content...</p>
+			<p>Some random content...</p>
+			<p>Some random content...</p>
+			<p>Some random content...</p>
+			<p>Some random content...</p>
 
-		
+			<h2>History:</h2>
+				<table id="history-table">
+					<tr>
+						<td><a href=""[v1]>[v1]</a> Wed, 1 Aug 2012 12:30:53 GMT (305kb,D)</td>
+					</tr>
+					<tr>
+						<td><a href=""[v2]>[v2]</a> Mon, 1 Oct 2012 10:51:58 GMT (313kb,D)</td>
+					</tr>
+				</table>
+		</div>
+
+		<div id="footer">
+			<p id="copyright">©2016 Fabian Falck, JP Schinkel, Ludger Rothermel, AND OTHERS?</p>
+		</div>
+
 	</div>
 </body>
 <div id = "footer">

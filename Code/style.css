@@ -1,40 +1,81 @@
+body, h1, h2, h3, h4, h5, h6, p{
+	font-family:courier;
+}
+
+h2 {
+	font-size: 15px;
+}
+
+p {
+	font-size:12px;
+}
+
+body{
+	text-align: center;
+}
+
+#page-wrap {
+  text-align: left;
+  width: 800px;
+  margin: 0 auto;
+}
 
 #header-logo-bar h1{
 	display: inline;
-	padding-left:200px;
+	padding-left:150px;
 	padding-right:50px;
 }
-
 #header-logo-bar h2{
 	padding-left:150px;
 	font-size:15px;
 }
-
 #header-logo-bar h1{
 	font-size=40px;
 }
 
+#header-categories-bar{
+	display: block;
+	clear:right;
+	padding-bottom:20px;
+}
 #categories{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding:0;
 }
-
-#categories li {
-    float: left;
+#categories li{
+    float:left;
 }
-
-#categories a {
-    display: block;
+#categories a{
     padding: 8px;
-    background-color: #dddddd;
+    background-color: white;
 }
 
 #main{
 	display:block;
 }
 
-#document-info li{
-	list-style-type: none;
+#document-info{
+	padding:20px 0 0 20px;
+	clear:left;
+	list-style-type:none;
+	font-size:12px;
 }
 
+#history h2{
+	font-size:20px;
+}
+
+#history-table, #document-info-table{
+	font-size:12px;
+}
+
+
+
+#copyright{
+	text-align: right;
+}
+
+#categories .selected{
+	background-color:grey;
+}
